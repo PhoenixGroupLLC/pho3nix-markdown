@@ -1,0 +1,29 @@
+{
+  "entrypoint": "src/pho3nix-element.js",
+  "shell": "src/pho3nix-element.js",
+  "sources": [],
+  "extraDependencies": [
+    "node_modules/@webcomponents/webcomponentsjs/**"
+  ],
+  "builds": [
+    {
+      "name": "esm-bundled",
+      "browserCapabilities": [
+        "es2015",
+        "modules"
+      ],
+      "js": {
+        "minify": true
+      },
+      "css": {
+        "minify": true
+      },
+      "html": {
+        "minify": true
+      },
+      "bundle": true
+    }
+  ],
+  "moduleResolution": "node",
+  "npm": true
+}

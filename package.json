@@ -1,0 +1,26 @@
+{
+  "name": "pho3nix-element",
+  "version": "1.0.0",
+  "contributors": [
+    "Phoenix Group LLC"
+  ],
+  "main": "build/esm-bundled/src/pho3nix-element.js",
+  "license": "BSD-3-Clause",
+  "repository": "PhoenixGroup/pho3nix-element",
+  "scripts": {
+    "start": "gulp serve",
+    "build": "tsc && polymer build",
+    "serve": "polymer serve --hostname 0.0.0.0 --port 8080 build/esm-bundled",
+    "docker:dev": "docker run -it -p 0.0.0.0:8080:8080 -v %CD%:/usr/src/app pho3nixhun/lit-dev:latest /bin/bash"
+  },
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "lit-element": "^2.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "polymer-cli": "^1.9.10",
+    "polyserve": "^0.27.0",
+    "typescript": "^3.5.2"
+  }
+}
