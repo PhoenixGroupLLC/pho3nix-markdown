@@ -1,7 +1,7 @@
 import { LitElement, html, css, property, customElement } from 'lit-element';
 
-@customElement('pho3nix-element')
-export class Pho3nixElement extends LitElement {
+@customElement('pho3nix-markdown')
+export class Pho3nixMarkdown extends LitElement {
   @property({ type: Boolean, reflect: true, attribute: true })
   sticky = false;
 

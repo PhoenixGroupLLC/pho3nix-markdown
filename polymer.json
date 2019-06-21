@@ -1,6 +1,6 @@
 {
-  "entrypoint": "src/pho3nix-element.js",
-  "shell": "src/pho3nix-element.js",
+  "entrypoint": "src/pho3nix-markdown.js",
+  "shell": "src/pho3nix-markdown.js",
   "sources": [],
   "extraDependencies": [
     "node_modules/@webcomponents/webcomponentsjs/**"
