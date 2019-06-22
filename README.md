@@ -2,12 +2,12 @@
 
 > ## 🛠 Status: Done
 
-# Pho3nix-element
+# Pho3nix-markdown
 
-Boilerplate for lit-element development
+Simple markdown rendering lit element.
 
 ## Example:
 
 ```HTML
-    <pho3nix-element></pho3nix-element>
+    <pho3nix-markdown [src: String] [theme: String]></pho3nix-markdown>
 ```

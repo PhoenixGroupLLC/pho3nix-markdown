@@ -14,8 +14,12 @@
     "docker:dev": "docker run -it -p 0.0.0.0:8080:8080 -v %CD%:/usr/src/app pho3nixhun/lit-dev:latest /bin/bash"
   },
   "dependencies": {
+    "@types/showdown": "^1.9.3",
     "@webcomponents/webcomponentsjs": "^2.2.10",
-    "lit-element": "^2.2"
+    "lit-element": "^2.2",
+    "lit-html": "^1.1.0",
+    "pho3nix-spinner": "git+https://github.com/Pho3nixHun/pho3nix-spinner.git",
+    "showdown": "git+https://github.com/PhoenixGroupLLC/showdown.git"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
