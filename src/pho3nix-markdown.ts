@@ -7,6 +7,16 @@ import 'pho3nix-spinner';
 import Showdown from 'showdown'; 
 
 const converter = new Showdown.Converter();
+converter.setOption('parseImgDimensions', true);
+converter.setOption('simplifiedAutoLink', true);
+converter.setOption('strikethrough', true);
+converter.setOption('tables', true);
+converter.setOption('tasklists', true);
+converter.setOption('openLinksInNewWindow', true);
+converter.setOption('emoji', true);
+converter.setOption('underline', true);
+converter.setOption('metadata', true);
+
 @customElement('pho3nix-markdown')
 export class Pho3nixMarkdown extends LitElement {
   private fetchedMarkdown: [string, string] = ['', ''];
